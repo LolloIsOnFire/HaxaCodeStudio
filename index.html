@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaCode Studio - Web Development Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="hex-icon"><i class="fas fa-code"></i></span>
+                <h1>HexaCode Studio</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Trasformiamo le tue idee in realtà digitale</h1>
+            <p class="animate-text-delay">Siti web personalizzati, responsive e moderni per far crescere il tuo business</p>
+            <a href="#contatti" class="cta-button">Richiedi un Preventivo</a>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="code-element">&lt;/&gt;</div>
+                <div class="design-element"><i class="fas fa-paint-brush"></i></div>
+                <div class="mobile-element"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="services">
+        <h2>I Nostri Servizi</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Sviluppo di siti web personalizzati con le ultime tecnologie</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Design ottimizzato per tutti i dispositivi</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-search"></i>
+                <h3>SEO</h3>
+                <p>Ottimizzazione per i motori di ricerca</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Interface utente intuitive e accattivanti</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progetti Section -->
+    <section id="progetti" class="projects">
+        <h2>I Nostri Progetti</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/api/placeholder/400/300" alt="Progetto 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Fashion</h3>
+                    <p>Shop online responsive con gestione catalogo</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/api/placeholder/400/300" alt="Progetto 2">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Artista</h3>
+                    <p>Galleria interattiva con effetti moderni</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/api/placeholder/400/300" alt="Progetto 3">
+                </div>
+                <div class="project-info">
+                    <h3>Blog Tech</h3>
+                    <p>Platform di contenuti ottimizzata per SEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="contact">
+        <h2>Contattaci</h2>
+        <div class="contact-container">
+            <form class="contact-form" action="https://formspree.io/f/meoqeeze" method="POST">
+                <div class="form-group">
+                    <input type="text" id="nome" name="name" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="messaggio" name="message" required></textarea>
+                    <label for="messaggio">Messaggio</label>
+                </div>
+                <button type="submit" class="submit-button">Invia Messaggio</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@hexacode.studio</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+39 XXX XXX XXXX</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="hex-icon"><i class="fas fa-code"></i></span>
+                <h3>HexaCode Studio</h3>
+            </div>
+            <p>&copy; 2024 HexaCode Studio. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
