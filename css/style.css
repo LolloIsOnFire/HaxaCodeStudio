@@ -242,13 +242,13 @@ nav {
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 15rem;
     overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -347,6 +347,11 @@ nav {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+.social-links a{
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .social-icon {
@@ -468,4 +473,8 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
+    .code-element { top: 0; left: 20%; }
+    .design-element { top: 20%; right: 100%; }
+    .mobile-element { bottom: 40%; left: 40%; }
 }
