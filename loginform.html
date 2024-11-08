@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaCode Studio - Web Development Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm"> <!-- Cambia l'ID del form da login-form a loginForm -->
+            <div class="form-group">
+                <input type="email" id="loginEmail" name="email" required placeholder=" ">
+                <label for="loginEmail">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="loginPassword" name="password" required placeholder=" ">
+                <label for="loginPassword">Password</label>
+            </div>
+            <button type="submit" class="submit-button">Accedi</button>
+        </form>
+        <p>Non hai un account? <a href="registerform.html" class="register-link">Registrati</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="hex-icon"><i class="fas fa-code"></i></span>
+                <h3>HexaCode Studio</h3>
+            </div>
+            <p>&copy; 2024 HexaCode Studio. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+
+    <script src="JS/script.js"></script>
+    <script src="JS/scriptlogin.js" defer></script>
+    <script src="JS/scriptregister.js"></script>
+    <script src="JS/db.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>

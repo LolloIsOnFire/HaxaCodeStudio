@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #f7c08a;
+    --secondary-color: #333;
+    --third-color: #666;
+    --white: #fff;
+    --success-light: #e6f4ea;
+    --success-border: rgba(247, 192, 138, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, var(--white) 0%, #f5f5f5 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-container {
+    background: var(--white);
+    width: 90%;
+    max-width: 500px;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.6s ease-out, fadeIn 0.6s ease-out;
+    border: 2px solid var(--success-border);
+}
+
+/* Checkmark Animation */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    background: var(--success-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.5s ease-out 0.3s both;
+}
+
+.success-icon i {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    animation: checkmark 0.4s ease-out 0.8s both;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+p {
+    color: var(--third-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    animation: fadeIn 0.6s ease-out 0.4s both;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out 0.6s both;
+}
+
+.btn:hover {
+    background: #f5b573;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 192, 138, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Decorative Elements */
+.success-container::before,
+.success-container::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: var(--primary-color);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.success-container::before {
+    top: -100px;
+    left: -100px;
+}
+
+.success-container::after {
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmark {
+    from {
+        transform: scale(0) rotate(-45deg);
+    }
+    to {
+        transform: scale(1) rotate(0);
+    }
+}
+
+/* Floating Animation for Background Elements */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .success-container {
+        width: 85%;
+        padding: 2.5rem 2rem;
+        margin: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .success-icon i {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .success-container {
+        width: 80%;
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1.5rem;
+    }
+
+    .success-icon i {
+        font-size: 1.75rem;
+    }
+}

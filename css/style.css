@@ -24,6 +24,36 @@ body {
 }
 
 /* ====================
+        User Menu
+   ==================== */
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcome-text {
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.logout-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e6954c;
+}
+
+/* ====================
    Header & Navigation
    ==================== */
 header {
@@ -477,6 +507,39 @@ footer {
     .code-element { top: 0; left: 20%; }
     .design-element { top: 20%; right: 100%; }
     .mobile-element { bottom: 40%; left: 40%; }
+
+    footer {
+        background: var(--secondary-color);
+        color: var(--white);
+        padding: 2rem;
+        text-align: center;
+
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .user-menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .welcome-text{
+        display: none;
+    }
+    
+    .logout-btn {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.7rem;
+        transition: background-color 0.3s ease;
+    }
 }
 
 @media screen and (max-width: 400px){
